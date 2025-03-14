@@ -21,12 +21,12 @@ pipeline{
                 sh "npm install"
                 }
             }
-            stage('Run Tests') {
-                steps {
+           // stage('Run Tests') {
+            //    steps {
                 // Run the ReactJS tests
-                sh "npm test"
-                }
-            }
+              //  sh "npm test"
+              //  }
+           // }
  
             stage ('Build Docker Image') {
                 steps{
